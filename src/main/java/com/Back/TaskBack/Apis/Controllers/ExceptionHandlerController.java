@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 
-//give public excep
+//give public exception
 @RestControllerAdvice
 public record ExceptionHandlerController() {
 

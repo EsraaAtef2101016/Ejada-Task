@@ -39,16 +39,6 @@ public class User {
     private  String lastName;
 
 
-    public User() {
-      normalize();
-    }
-
-    @PrePersist @PreUpdate
-    private void normalize() {
-        if (email != null) email = email.trim().toLowerCase();
-        if (username != null) username = username.trim();
-    }
-
 
     public long getId() {
         return Id;
